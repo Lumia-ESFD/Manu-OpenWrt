@@ -38,6 +38,10 @@ jobs:
       # SSH Connect To Actions
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
+        
+      # Wait 30 seconds
+      - name: Wait 30s for SSH
+        run: sleep 30
 
       - name: Upload firmware directory
         uses: actions/upload-artifact@v2
