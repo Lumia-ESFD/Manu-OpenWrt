@@ -49,11 +49,11 @@ jobs:
           name: CONFIG
           path: lede/.config
           
-      - name: Upload firmware directory
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ github.event.inputs.OutPutFiles }}
-          path: openwrt/bin/targets/*/*/*.*
+#      - name: Upload firmware directory
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: ${{ github.event.inputs.OutPutFiles }}
+#          path: openwrt/bin/targets/*/*/*.*
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
